@@ -2,6 +2,7 @@ import random
 r = random.randint(1, 100)
 count = 0
 while True:
+	count += 1
 	num = input('enter a number(from 1 to 100):')
 	num = int(num)
 	if num == r:
@@ -11,3 +12,4 @@ while True:
 		print('the answer is smaller')
 	elif num < r:
 		print('the answer is biger')
+	print('this is your', count, 'time')
